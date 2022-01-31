@@ -15,7 +15,9 @@ router.get('/contacto',(req,res)=>{
 
 router.get('/acerca',(req,res)=>{
 
-    res.send ('Acerca de mi')
+    res.send (
+        <h1>Acerca de mi</h1>
+    )
 })
 
 // 3. exportaciones
