@@ -17,7 +17,7 @@ aplica validez de importaciones y exportaciones en un proyecto
 //archivos node_modules
 //express es una libreria que funciona para la gestion de ruteos y middlewares
 const express = require("express");
-const app = express();
+const app = express();      
 // console.log(express);
 
 // const resta = require('./resta');
@@ -28,6 +28,13 @@ const app = express();
 //en local vale una cosa y en remoto otra
 require('dotenv').config()
 
+app.use(express.static('public'))
+
+//establecer vistas (path y motor handlebars)
+app.set('views', __dirname + '/views')
+
+//motor handlebars
+app.set('view engine', 'hbs')
 
 // 3. rutas
 app.use('/', require('./routes/index'))
@@ -36,3 +43,4 @@ app.use('/', require('./routes/index'))
 app.listen(process.env.PORT, () => {
   console.log("Servidor activo");
 });
+ 

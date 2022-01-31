@@ -18,5 +18,11 @@ router.get('/acerca',(req,res)=>{
     res.send ('Acerca de mi :D')
 })
 
+router.get('/lomito',(req,res)=>{
+
+    res.render ('index')
+})
+
+
 // 3. exportaciones
 module.exports=router;
