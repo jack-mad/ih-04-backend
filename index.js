@@ -25,6 +25,8 @@ const app = express();
 
 // 2. middlewares
 
+
+
 // 3. rutas
 app.use('/', require('./routes/index'))
 
