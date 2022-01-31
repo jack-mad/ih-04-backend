@@ -8,5 +8,10 @@ router.get('/',(req,res)=>{
     res.send ('Hola mundo')
 })
 
+router.get('/contacto',(req,res)=>{
+
+    res.send ('Contacto')
+})
+
 // 3. exportaciones
 module.exports=router;
