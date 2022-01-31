@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body{
     background-color: turquoise;
+}
+
+h1{
+    font-family: 'Poppins';
+    color: rgb(0, 69, 173);
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
